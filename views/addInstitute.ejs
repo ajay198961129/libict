@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <title>Bussiness Partner Creation</title>
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="cus-container">
+      <%- include("includes/sidebar.ejs") %>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <%- include("includes/topbar.ejs") %>
+
+        <!-- ================ Order Details List ================= -->
+        <div class="full-details details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Add Institute</h2>
+              <!-- <a href="#" class="btn">Add New</a> -->
+            </div>
+            <div class="formcard">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Institute Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Institute Name"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Institute Email"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Confirm Password"
+                    />
+                  </div>
+                </div>
+                <button class="cus-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

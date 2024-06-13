@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <title>Add Course</title>
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="cus-container">
+      <%- include("includes/sidebar.ejs") %>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <%- include("includes/topbar.ejs") %>
+
+        <!-- ================ Order Details List ================= -->
+        <div class="full-details details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Add Chapter</h2>
+              <a href="chapter" class="btn">Chapter List</a>
+            </div>
+            <div class="formcard">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Chapter Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Chapter Name"
+                    />
+                  </div>
+                </div>
+                <button class="cus-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

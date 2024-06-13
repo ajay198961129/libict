@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <title>Add Course</title>
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="cus-container">
+      <%- include("includes/sidebar.ejs") %>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <%- include("includes/topbar.ejs") %>
+
+        <!-- ================ Order Details List ================= -->
+        <div class="full-details details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Add Course</h2>
+              <a href="#" class="btn">Add Category</a>
+            </div>
+            <div class="formcard">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Course Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Course Name"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Course Category</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Select Category</option>
+                      <option value="1">Marketing</option>
+                      <option value="2">Coding</option>
+                      <option value="3">Physics</option>
+                    </select>
+                    <!-- <input
+                      type="email"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Student Email"
+                    /> -->
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Price</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Price"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-9">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Description</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name=""
+                      placeholder="Enter Description"
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="cus-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

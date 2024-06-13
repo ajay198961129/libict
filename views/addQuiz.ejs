@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <title>Add Quiz</title>
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="cus-container">
+      <%- include("includes/sidebar.ejs") %>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <%- include("includes/topbar.ejs") %>
+
+        <!-- ================ Order Details List ================= -->
+        <div class="full-details details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Add Quiz</h2>
+              <a href="quiz" class="btn">Quiz List</a>
+            </div>
+            <div class="formcard">
+              <form action="">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Quiz Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Assesment Name"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Course Name</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Select Course</option>
+                      <option value="1">Mern Stack Development</option>
+                      <option value="2">Digital Marketing</option>
+                      <option value="3">MS Word Beginner to Advanced</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Chapter Name</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Select Chapter Name</option>
+                      <option value="1">Chapter - I</option>
+                      <option value="2">Chapter - II</option>
+                      <option value="3">Chapter - III</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Attach Quiz File</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                      placeholder="File Format PDF"
+                    />
+                  </div>
+                </div>
+                <button class="cus-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>

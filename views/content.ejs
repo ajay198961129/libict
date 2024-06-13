@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head.ejs") %>
+    <title>LIBICT Content</title>
+  </head>
+
+  <body>
+    <!-- =============== Navigation ================ -->
+    <div class="cus-container">
+      <%- include("includes/sidebar.ejs") %>
+
+      <!-- ========================= Main ==================== -->
+      <div class="main">
+        <%- include("includes/topbar.ejs") %>
+
+        <!-- ================ Order Details List ================= -->
+        <div class="full-details details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h4>LIBICT Course Content</h4>
+              <a href="add-content" class="btn">Add Content</a>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <td>Sr.</td>
+                  <td>Content Name</td>
+                  <td>Course Name</td>
+                  <td>Chapter</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Introduction</td>
+                  <td>Mern Stack Development</td>
+                  <td>Chapter - I</td>
+                  <td>
+                    <a href="#" style="text-decoration: none"
+                      ><span class="status inProgress">Edit</span></a
+                    >&nbsp;
+                    <a href="#" style="text-decoration: none"
+                      ><span class="status return">Delete</span></a
+                    >&nbsp;
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2.</td>
+                  <td>What is MERN Stack?</td>
+                  <td>Mern Stack Development</td>
+                  <td>Chapter - I</td>
+                  <td>
+                    <a href="#" style="text-decoration: none"
+                      ><span class="status inProgress">Edit</span></a
+                    >&nbsp;
+                    <a href="#" style="text-decoration: none"
+                      ><span class="status return">Delete</span></a
+                    >&nbsp;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>
